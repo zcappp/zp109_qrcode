@@ -1,5 +1,5 @@
 function onInit({ exc, props, container }) {
-    exc('load("//z.zcwebs.cn/vendor/qrcode.min.js")', {}, () => {
+    exc('load("//z.zccdn.cn/vendor/qrcode.min.js")', {}, () => {
         new QRCode(container, {
             text: props.text || location.href,
             width: props.width || 128,
