@@ -1,4 +1,4 @@
-function onInit({ exc, props, container }) {
+function init({ exc, props, container }) {
     exc('load("//z.zccdn.cn/vendor/qrcode.min.js")', {}, () => {
         new QRCode(container, {
             text: props.text || location.href,
@@ -22,5 +22,5 @@ $plugin({
         label: "宽度(px)",
         ph: "默认是128"
     }],
-    onInit
+    init
 })
