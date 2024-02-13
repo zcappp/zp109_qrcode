@@ -5,7 +5,7 @@ module.exports = {
     mode: process.env.mode || "development",
     devtool: false,
     entry: {
-        "zp109": "./plugins/zp109_二维码生成器.js",
+        "zp109": "./src/zp109_二维码生成器.js",
     },
     output: {
         path: path.join(__dirname, "build/"),
